@@ -28,6 +28,7 @@
     body{
     background-color:#e7e7e7;
     font-family:helvetica;
+    word-wrap:break-word;    
     color:#333333;}
     
     a{
