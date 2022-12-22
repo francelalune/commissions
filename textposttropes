@@ -1,0 +1,402 @@
+    <!DOCTYPE HTML>
+    <head>
+
+    <meta name="text:description" content="">
+    
+    <meta name="text:link 1" content="Extra">
+    <meta name="text:link 2" content="Extra">
+    <meta name="text:link 3" content="Extra">
+    
+    <meta name="text:link 1 url" content="/">
+    <meta name="text:link 2 url" content="/">
+    <meta name="text:link 3 url" content="/">
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="//glen-npf-2020.glitch.me/npf-override.css" rel="stylesheet">
+    <script src="//glen-npf-2020.glitch.me/npf-evenize.js"></script>
+    
+        <link rel="alternate" type="application/rss+xml" href="{RSS}"> 
+    {block:Description}
+    <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <title>{Title}</title>
+    
+    <style type="text/css">
+
+    body{
+    background-color:#e7e7e7;
+    font-family:helvetica;
+    color:#333333;}
+    
+    a{
+    color:#006ab1;}
+
+
+    .npf_row{
+    margin: 0 !important;}
+ 
+    blockquote{
+    border-left:1px solid #333333;
+    padding-left:10px;
+    margin: 15px;}
+ 
+    p{
+    margin:0 0 5px 0;
+    padding:0;}
+
+/* ----------------------------------------------------------------- */    
+                /* header & desc */
+                
+    #header{
+    margin-bottom:15px;    
+    border-radius:10px;
+    padding:45px;
+    background:#3c4b5e;
+    border:1px solid #ececec;}
+    
+    #description{
+    padding:5px;
+    background:white;
+    border:1px solid #ececec;}
+
+
+/* ----------------------------------------------------------------- */    
+                /* sidebar */
+                
+    #right-sidebar{
+    position:fixed;   
+    padding:5px;
+    width:376px;
+    right:0px;} 
+    
+    #right-sidebar a{
+    color:#5b5b5b;}               
+/* ----------------------------------------------------------------- */    
+                /* posts & content */
+                
+    #everything-container{
+    width:900px;
+    position:absolute;
+    border:1px solid #ececec;
+    left: 50%;
+    transform: translateX(-50%);}            
+ 
+    #content-container{
+    width:500px;
+    background:#fbfbfb ;
+    width:900px;}
+ 
+    .post, .nav{
+    margin:15px 0 15px 0;
+    border:1px solid #ececec;
+    padding:5px;
+    width:500px;
+    background:white;}
+ 
+    .post img{
+    max-width:100%;
+    height:auto;}
+ 
+/* ----------------------------------------------------------------- */   
+
+    .footer{}
+    
+    ol.notes{
+    list-style-type:none;
+    padding:3px;
+    overflow:auto;}
+
+/* ----------------------------------------------------------------- */   
+
+    .question{
+    background:#fbfbfb;}
+
+    .bubble {
+    position: relative;
+    background: white;
+    margin-left:20px;
+    width: 360px;
+    text-align:center;
+    max-height: 100px;
+    background:#e7e7e8;
+    padding:5px;
+    border-radius: 10px;
+    margin-top:5px;}
+    
+    .bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: transparent #e7e7e8;
+    border-width: 20px 20px 20px 0;
+    top: 50%;
+    left: -20px;
+    margin-top: -20px;}
+    
+/* ----------------------------------------------------------------- */   
+    
+    h1{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #999999; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;} 
+
+    h1 span{ 
+    background:white; 
+    padding:0 10px;}
+
+
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+
+        
+    <div id="everything-container">    
+    
+<div id="header">
+    <a href="/"><img src="https://64.media.tumblr.com/3c5f2765fdabbd8ba8105694f78e525b/ae7c539ae6bf9331-f0/s1280x1920/64ee3b43b39a0d7ef4453993abd28da6a71b2fdc.png" width="100%"></a>
+</div>    
+
+    <div id="description">
+        {text:description}
+    </div>
+    
+    
+<div id="content-container">
+
+    <div id="right-sidebar">
+<text style="font-size:6px;"><h1><span>IMPORTANT LINKS</span></h1></text>
+
+<a href="/ask">{AskLabel}</a>
+<br><a href="/submit">{SubmitLabel}</a> 
+<br><a href="/archive">{lang:Archive}</a>
+<br><a href="{text:link 1 url}">{text:link 1}</a>
+<br><a href="{text:link 2 url}">{text:link 2}</a>
+<br><a href="{text:link 3 url}">{text:link 3}</a>
+
+    </div>
+
+    <div id="content">
+        {block:Posts} 
+ 
+            <!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> {block:ContentSource}<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo}-->
+{/block:ContentSource}
+
+                <div class="post">
+                    <div class="posts" post-type="{PostType}">
+
+ 
+            <!-- -- -- Images -- -- -->
+ 
+    {block:Photo}
+        {LinkOpenTag}
+            <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+        {LinkCloseTag}
+        {block:Caption}
+            {Caption}
+        {/block:Caption}
+    {/block:Photo}
+    {block:Photoset}
+            <div class="media">{Photoset}</div>
+        {block:Caption}
+            <div class="caption">
+                {Caption}
+            </div>
+        {/block:Caption}
+    {/block:Photoset}
+ 
+            <!-- -- -- text, quotes, links -- -- -->
+ 
+    {block:Text}
+        {block:Title}
+            <div class="title">{Title}</div>
+        {/block:Title}
+            {Body}
+    {/block:Text}
+ 
+ 
+    {block:Chat}
+        {block:Title}
+            <div class="title">
+                <h3><a href="{Permalink}">{Title}</a></h3></div>
+        {/block:Title}
+        {block:Lines}
+            <div class="{Alt} user_{UserNumber}">
+        {block:Label}
+            <span class="label">{Label}</span>
+        {/block:Label}
+        {Line}
+            </div>
+        {/block:Lines}
+    {/block:Chat}
+ 
+ 
+    {block:Quote}
+        <div class="quote">
+            "{Quote}"
+            {block:Source}
+                <div class="source">
+                    - <i>{Source}</i>
+                </div>
+            {/block:Source}
+        </div>
+    {/block:Quote}    
+ 
+    {block:Link}
+        <a href="{URL}" class="link" {Target}>{Name}</a>
+        {block:Description}
+            {Description}
+        {/block:Description}
+    {/block:Link}
+ 
+ 
+            <!-- -- -- audio & video -- -- -->
+ 
+    {block:Video}
+        {Video-500}
+        {block:Caption}
+            {Caption}
+        {/block:Caption}
+    {/block:Video}
+ 
+    {block:Audio}
+        <div id= "audioplayer">{AudioPlayerWhite}</div>
+    {block:AlbumArt}
+        <div id="albumart">
+            <img src="{AlbumArtURL}" width="100">  
+        </div>
+    {/block:AlbumArt}
+        <div class="trackstuff">
+            {block:TrackName}
+                <b><i>{TrackName}</i></b>
+            {/block:TrackName}
+            <br>{block:Artist}
+                <i>{Artist}</i>
+            {/block:Artist}
+        </div>
+        {Caption}
+    {/block:Audio}    
+ 
+            <!-- -- -- asks -- -- -->
+ 
+{block:Answer}
+        <div class="question">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                        {Asker}
+                        <img src="{AskerPortraitURL-128}" style="width:95px; display:block;"></td>                    
+                        <td style="width:350px;"><div class="bubble">{Question}</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="caption">
+                {Answer}
+            </div>
+    {/block:Answer}  
+ 
+ 
+            <!-- -- -- asks -- -- -->
+ 
+    {block:Date}
+        <div class="footer">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="background:#eeeeee;padding:5px;">
+                        <a href="{Permalink}">
+                            Permalink
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {Month}	{DayOfMonth}, {Year}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#eeeeee;padding:5px;">
+                        {block:RebloggedFrom}via: <a href="{ReblogParentURL}">{ReblogParentName}</a>{/block:RebloggedFrom}           
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            {block:NoteCount}
+                                {NoteCount} notes
+                            {/block:NoteCount}
+                    </td>
+                <tr>    
+                    <td style="background:#eeeeee;padding:5px">
+	                        {block:HasTags}
+                            <div class="tags">
+                                {block:Tags}
+                                    #<a href="{TagURL}">{Tag}</a> 
+                                {/block:Tags}
+                            </div>
+                        {/block:HasTags} 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+
+            {block:PermalinkPage}
+                <div class="notes" style="background:#eeeeee">
+                    {block:PostNotes}
+                        {PostNotes}
+                    {/block:PostNotes}
+                </div>    
+            {/block:PermalinkPage}
+            <!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> 
+        </div>
+    {/block:Date}
+ 
+ 
+                    </div>
+                </div>
+    {/block:Posts}
+</div>
+ 
+ 
+    <br>
+    <div class="nav">
+        {block:Pagination}
+            <center>
+                {block:PreviousPage}
+                    <a href="{PreviousPage}">&#10094;</a> 
+                {/block:PreviousPage}
+                {block:JumpPagination length="3"}
+                {block:CurrentPage}
+                    <span class="current_page">{PageNumber}</span>
+                {/block:CurrentPage}
+                {block:JumpPage}
+                    <a class="jump_page" href="{URL}">{PageNumber}</a>
+                {/block:JumpPage}
+                {/block:JumpPagination}
+                {block:NextPage}
+                    <a href="{NextPage}">&#10095;</a>
+                {/block:NextPage}
+            </center>
+        {/block:Pagination}
+    </div>  
+</div>    
+
+</div>
+
+ 
+</body>
+</html>
+ 
