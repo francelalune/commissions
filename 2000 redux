@@ -610,6 +610,8 @@ data-config="{'skin':'{text:music player skin url}','volume':50,'autoplay':{sele
         </tbody>
     </table>
     
+<img src="{image:footer pixel}">
+    
 {block:HasTags}
 {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
 
