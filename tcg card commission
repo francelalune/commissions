@@ -1,0 +1,215 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <title>hi</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>    
+    
+    <link rel="shortcut icon" href="https://64.media.tumblr.com/91f6025a87cb2577bea65ea96d25f1e0/372ad5d9f77e0919-f2/s75x75_c1/274013a4c3e65250775952109f5fec0757308674.gif">
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function toggleText(){
+    if ($("#txt-1").css("display") != "none") {
+        $("#txt-1").css("display", "none");
+        $("#txt-2").css("display", "block");
+    } else {
+        $("#txt-1").css("display", "block");
+        $("#txt-2").css("display", "none");
+    }
+};
+</script>   
+    
+    <style type="text/css"> 
+
+
+    /***************************************************
+
+                       Document Body
+    
+    ***************************************************/
+
+    body{
+        font-family:arial;
+        font-size:18px;}
+    
+    a{
+        text-decoration:none;}
+        
+    a:hover{
+    color:red;}    
+
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 10px;}
+
+    ::-webkit-scrollbar-thumb:vertical{
+        background-color: black;
+        border-top: 1px solid #bdbdbd;
+        border-left: 1px solid #bdbdbd;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;}
+
+    ::-webkit-scrollbar-track {
+        background:white;}    
+
+
+    /***************************************************
+
+                    Container & Content
+    
+    ***************************************************/
+
+    #container{
+        position:absolute;
+        top:45%; left: 50%;
+        width:975px;
+        padding:5px;
+        height:500px;
+        transform: translateY(-50%) translateX(-50%);}
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+    
+    #header{
+        margin-left:175px;
+        width:600px;
+        text-align:center;
+        padding:10px;
+        border:1px solid blue;}
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+
+    #content-container{
+        width:610px;
+        margin-top:16px;
+        margin-left:170px;    
+        padding:5px;}    
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+    
+    .links{
+        margin:-5px 0 10px 0;}
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */    
+
+    #content{
+        height:200px;
+        border:1px solid red;
+        overflow-y:hidden;
+        width:610px;
+        text-align:center;
+        padding:5px;}
+        
+    #intro{
+        height:150px;
+        overflow-y:auto;
+        max-height:150px;}    
+        
+    #further-reading{
+        margin:20px 0 0 0;
+        padding:5px;
+        overflow-x:hidden;
+        max-height:280px;
+        overflow-y:auto;}    
+
+
+    /***************************************************
+
+                    Sidebar Graphics 1-2
+    
+    ***************************************************/
+
+    #left-bar{
+        position:fixed;
+        left:0px;
+        padding:5px;
+        float:left;    
+        text-align:center;
+        border:1px solid black;
+        height:500px;
+        top:70px;
+        width:150px;}
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+    
+    #right-bar{
+        position:fixed;
+        text-align:center;
+        right:0px;
+        float:right;   
+        padding:5px;
+        border:1px solid black;
+        height:500px;
+        top:70px;        
+        width:150px;}
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+    
+        <div id="container">
+        
+            <!-- . . . . . . . . -->
+            <div id="header">
+                link 1 . link 2 . link 3 . link 4 
+            </div>
+            <!-- . . . . . . . . -->
+            
+            <div id="content-container">
+            
+            <!-- . . . . . . . . -->    
+            
+                <div id="content">
+                    <div id="intro">
+                    text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+                    </div>
+                    
+                <p><div id="menu" onclick="changec()">Switch button</div>
+                    <script type="text/javascript">
+    var count = 0;
+    function changec() {
+        count++;
+        if(count%2==1)
+            document.getElementById("content").style.height = "500px";
+        else
+            document.getElementById("content").style.height = "200px";
+    }
+                    </script>  
+                
+    <div id="further-reading">
+        <button onclick="toggleText()">Change</button>
+            <p id="txt-1">
+                This is the first content ^_^
+            </p>
+
+            <p id="txt-2" style="display: none;">
+                And this is the second one
+            </p>
+    </div>
+
+
+                </div>
+                
+              
+                
+            </div>
+            
+            <!-- . . . . . . . . -->
+            
+            <div id="left-bar">
+                Left
+            </div>
+            
+            <!-- . . . . . . . . -->
+            
+            <div id="right-bar">
+                Right
+            </div>
+            
+        </div>
+    
+    </body>
+    </html>    
