@@ -1,0 +1,177 @@
+    <!DOCTYPE HTML>
+    <head>
+
+    <title>Clock</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>    
+    
+    <link rel="shortcut icon" href="https://64.media.tumblr.com/91f6025a87cb2577bea65ea96d25f1e0/372ad5d9f77e0919-f2/s75x75_c1/274013a4c3e65250775952109f5fec0757308674.gif">
+    <style type="text/css">
+
+            /******************************************
+    
+                            DOCUMENT BODY 
+                    
+            ******************************************/
+       
+    body{        
+    overflow-y:auto;
+    font-family:arial;
+    font-size:15px;}    
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+
+    a{
+        text-decoration:none;}
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+            
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 10px;}
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+        
+    ::-webkit-scrollbar-thumb:vertical{
+        background-color: black;
+        border-top: 1px solid #bdbdbd;
+        border-left: 1px solid #bdbdbd;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;}
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+
+    ::-webkit-scrollbar-track {
+        background:white;}
+
+
+            /******************************************
+    
+                                SIDEBAR 
+                    
+            ******************************************/
+            
+    #sidebar{
+        padding:10px;
+        top:0px;
+        left:0px;
+        width:175px;
+        text-align:center;
+        overflow-y: auto;
+        overflow-x:hidden;
+        padding-right: 15px; 
+        position:fixed;
+        background-color:white;
+        height:100%;
+        border-right:1px solid black;}    
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+    
+    .links{
+        margin:30px 0 30px 0;}    
+        
+
+            /******************************************
+    
+                                CONTENT 
+                    
+            ******************************************/        
+        
+    #diary-entries{
+        height:auto;
+        margin-left:220px;
+        margin-top:5px;
+        padding:10px;      
+        border:none;}    
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+        
+    #entry{
+        margin:10px 0 65px 0;
+        width:600px;}    
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+    
+    .title{
+        font-weight:bold;
+        font-size:18px;
+        text-align:left;}    
+        
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+    
+        <!-- . . . . . . . . . . . . . . . . . . . . . . . . -->
+    
+        <div id="sidebar">
+            <img src="https://64.media.tumblr.com/8f88a5656d7c7c9212a0276eff856f31/tumblr_pn28g4Q5e31w95sl4o2_100.gif">
+            
+            <p>. . . 
+            
+            <div class="links">
+                <p><a href="/">link one</a>
+            </div>    
+            
+            <div class="links">
+                <p><a href="/">link two</a>
+            </div>
+            <div class="links">
+                <p><a href="/">link three</a>
+            </div>    
+            <div class="links">
+                <p><a href="/">link four</a>
+            </div>
+            <div class="links">    
+                <p><a href="/">link five</a>
+            </div>
+            <div class="links">
+                <p><a href="/">link six</a>
+            </div>
+            <div class="links">
+                <p><a href="/">link seven</a>
+            </div>
+            <div class="links">
+                <p><a href="/">link eight</a>
+            </div>      
+            <div class="links">
+                <p><a href="/">link nine</a>
+            </div>    
+            <div class="links">
+                <p><a href="/">link ten</a>
+            </div>                
+        </div>
+        
+        <!-- . . . . . . . . . . . . . . . . . . . . . . . . -->
+        
+        <div id="diary-entries">
+            <div id="entry">
+                <div class="title">
+                    Name: Diary Entry One
+                    <br>Date: 1.5.2023
+                </div>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+                    <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+
+                    <p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+            </div>
+            <div id="entry">
+                <div class="title">
+                    Name: Diary Entry One
+                    <br>Date: 1.5.2023
+                </div>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+                    <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+
+                    <p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+            </div>            
+            
+            
+        </div>
+        
+    </body>
+    </html>
