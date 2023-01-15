@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<head>
+
+    <title>Clock</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>    
+    
+    <link rel="shortcut icon" href="https://64.media.tumblr.com/91f6025a87cb2577bea65ea96d25f1e0/372ad5d9f77e0919-f2/s75x75_c1/274013a4c3e65250775952109f5fec0757308674.gif">
+
+<style type="text/css">
+
+            /******************************************
+    
+                            DOCUMENT BODY 
+                    
+            ******************************************/
+            
+    body{
+        font-size:16px;}
+        
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+    
+    a{
+        text-decoration:none;}    
+            
+            
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 10px;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+        
+    ::-webkit-scrollbar-thumb:vertical{
+        background-color: black;
+        border-top: 1px solid #bdbdbd;
+        border-left: 1px solid #bdbdbd;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    ::-webkit-scrollbar-track {
+        background:white;}
+        
+          
+            /******************************************
+    
+                        CONTAIN & CONTENT 
+                    
+            ******************************************/
+
+    #container{
+        overflow:hidden;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding:5px;
+        width:675px;    
+        height:450px;
+        border:1px ridge black;    }
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    #content{
+        overflow:auto;
+        right:-2px;
+        position:absolute;
+        padding:5px;
+        width:395px;        
+        margin-top:-5px;
+        height:450px;
+        overflow-x: hidden;
+        overflow-y:auto;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    #content-contain{
+        margin-left:20px;
+        width:325px;
+        padding:5px;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    #side{
+        left:-6px;
+        top:-7px;
+        width:265px;
+        height:600px;
+        max-height:600px;
+        padding:5px;
+        position:fixed;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    #side-content{
+        width:270px;
+        height:670px;
+        border-right:1px ridge black;    
+        padding:5px;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . */          
+
+    .desc{
+        margin:10px 0 0 0;
+        display:block;}
+
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+
+    <div id="container">
+        <div id="side">
+            <div id="side-content">  
+
+    <center>
+        <img src="https://64.media.tumblr.com/e5de1687f4d25434a2f72955e19b2db1/d398df6508d1747f-4d/s1280x1920/60856f341f1606687f8324b50350e55913a1b4be.jpg" style="width:250px;display:block;border-radius:15px;margin-top:20px;">
+    
+    <div class="desc">Description!</div>    
+
+    <p><a href="/">link 1</a> . <a href="/">link 2</a>
+        
+    <div class="desc">Second description!</div>    
+        
+    </center>    
+
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="content-contain">
+
+In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+
+<p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
