@@ -1,0 +1,335 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" />     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <link rel="shortcut icon" href="https://emoemo.girly.jp/i/snowman/snowman_11.gif">    
+    
+    <link rel="stylesheet" href="https://unpkg.com/98.css">    
+    
+    <title>Trixie</title>
+    
+    <style type="text/css">
+
+    /****************************************
+    
+                  DOCUMENT BODY
+    
+    ****************************************/    
+    
+    body{
+        cursor:Url('https://64.media.tumblr.com/b46080782f6bd0d141cf247dcd03d925/77ee539882dad3ae-15/s75x75_c1/9f68b8319b90180bd4318801c79723d1ee0c56c3.png'), default;
+        background:#ffebef;
+    }
+ 
+    
+    /****************************************
+    
+                GENERAL APPEARANCE
+    
+    ****************************************/
+    
+    .window{
+        font-size:14px;
+        background:white;
+    }    
+        
+    /* - - - - - - - - - - - - - - - */    
+        
+    .title-bar{
+        font-size:15px;
+        background:pink;
+    }    
+        
+    
+    /****************************************
+    
+                     CONTENT
+    
+    ****************************************/    
+    
+    #commission{
+        position:fixed;
+        margin-left:75px;
+        margin-top:50px;
+      }
+        
+    /* - - - - - - - - - - - - - - - */    
+
+    #longer-about{
+        position:fixed;
+        margin-left:220px;
+        margin-top:220px;
+    }
+        
+    /* - - - - - - - - - - - - - - - */    
+
+    #about{
+        position:fixed;
+        margin-left:575px;
+        margin-top:140px;
+    }
+        
+    /* - - - - - - - - - - - - - - - */    
+
+    #stamps{
+        position:fixed;
+        margin-left:400px;
+        margin-top:450px;
+    }
+                
+    /* - - - - - - - - - - - - - - - */    
+
+    #extra{
+        position:fixed;
+        margin-left:940px;
+        margin-top:5px;
+    }    
+        
+
+    /****************************************
+    
+                      LINKS
+    
+    ****************************************/  
+    
+    #link-container{
+        bottom:100px;
+        right:25px;
+        width:300px;
+        text-align:center;
+        height:335px;
+        position:fixed;
+    }
+        
+        
+    /****************************************
+    
+                       ETC
+    
+    ****************************************/         
+    
+    .bubble {
+        position: relative;
+        background: #ffffff;
+        color: #000000;
+        font-size: 15px;
+        padding:5px;
+        text-align: center;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .bubble:after {
+        content: '';    
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        border-width: 20px 20px 0;
+        bottom: -20px;
+        left: 50%;
+        margin-left: -100px;
+    }
+    
+    
+    
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>      
+    
+    <div id="commission">
+        <div class="window" style="width: 300px;height:150px;overflow-y:auto;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="color:black">Commissions</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+            </div>
+            <div class="window-body" style="font-size:14px;line-height:20px;">
+                <p>
+                    <a href="/">commision status: CLOSED !</a>
+<p>if ur intrested in getting a commision, dm me on my art tumblr, twitter, or email me at th3trixst3r@gmail.com, thank u <img src="https://64.media.tumblr.com/213299b512f6e0f112ef87f29e58e8e1/f32ef427cb801498-f1/s75x75_c1/af4bbe972e270966c67e373d26f16ee399ace7e1.gif">
+                </p>
+            </div>
+        </div>  
+    </div>
+    
+    <!-- - - - - - - - - -  - - - - - -->
+    
+    <div id="longer-about">
+        <div class="window" style="width: 300px;height:200px;overflow-y:auto;">
+            <div class="title-bar">
+                <div class="title-bar-text"  style="color:black">Longer about</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+            </div>
+            <div class="window-body" style="font-size:14px;line-height:20px;">
+                <p>
+                    <img src="https://64.media.tumblr.com/f1a7a1594e7c13942789d29f2c5affa1/f32ef427cb801498-34/s75x75_c1/33d6399471b25ed06b0f87006f98ef8c52e90cea.gif"> likes:
+
+gaming, shiny hunting, vocaloid, fluffy things, fursuits, flipnote animations, being comfy, watching speedruns, littlest pet shop, the Nintendo ds and wii, and 2000s nostalgia ♡
+
+<p><img src="https://64.media.tumblr.com/4b764a4cb37d3534215fd19eac9f77a5/f32ef427cb801498-f7/s75x75_c1/7ca2386c7d3a5244247030f42d2dd51a3745d645.gif"> <b>fav game:</b> pokemon mystery dungeon explores of sky
+
+<br><img src="https://64.media.tumblr.com/4b764a4cb37d3534215fd19eac9f77a5/f32ef427cb801498-f7/s75x75_c1/7ca2386c7d3a5244247030f42d2dd51a3745d645.gif"> <b>fav anime:</b> puella magi madoka magica
+
+<br><img src="https://64.media.tumblr.com/4b764a4cb37d3534215fd19eac9f77a5/f32ef427cb801498-f7/s75x75_c1/7ca2386c7d3a5244247030f42d2dd51a3745d645.gif"> <b>fav food:</b> chicken sandwhich
+
+<br><img src="https://64.media.tumblr.com/4b764a4cb37d3534215fd19eac9f77a5/f32ef427cb801498-f7/s75x75_c1/7ca2386c7d3a5244247030f42d2dd51a3745d645.gif"> <b>fav color:</b> PINK !! Ꮚ​•꒳<Ꮚ⌒☆
+
+<p>current projects are...
+
+<br>♡ diamond and platinum dtq
+
+<br>♡ lps custom practice
+
+<br>♡ silksong flipnote animation
+
+<br>♡ acnh town remodel
+
+<br>♡ warrior cats design project arc 1
+                </p>
+            </div>
+            <img src="https://64.media.tumblr.com/7932783cad9cb64e8506f00210284d5f/f32ef427cb801498-b1/s250x400/7e0e535a6e50bc97cb91bf8af8112464ec8b62b4.png" style="width:155px; position: fixed;z-index: 3;margin-left:195px;margin-top:45px;">
+        </div>         
+    </div>
+    
+    <!-- - - - - - - - - -  - - - - - -->    
+    
+    <div id="about" style="z-index: 2;">
+        <div class="window" style="width: 500px;height:300px;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="color:black">About</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+            </div>
+            <div class="bubble" style="position:fixed;margin-top:-85px;">they/it/he ♡ 20 ♡ ΘΔ</div>
+            <div class="window-body" style="font-size:14px;line-height:25px;">
+                <p>
+                   hii its trixie <img src="https://64.media.tumblr.com/bb591c2e58be4e4151f78c177f7df6d7/f32ef427cb801498-cd/s75x75_c1/0545f99b15a0ef4f881d2f84d2e40d6c28d7f28d.gif"> I'm an autistic sheepboy girlthing making art and being gay <img src="https://64.media.tumblr.com/0f9aebdcd6fcdf8b8930a6c63b89755a/f32ef427cb801498-42/s75x75_c1/d1d0bb1e66ab50e0e9faf14781cd55088ba878a4.gif"> <br>I make furry art, pixel art, and animations !! I also play a lot of video games and I wanna make my own someday Ꮚ​≧ꈊ​•Ꮚ/☆
+                   
+<p><img src="https://64.media.tumblr.com/6d6a45295d1b7e18f37646a64c4c0eeb/f32ef427cb801498-a9/s400x600/0e00511f1217958a3420ed206c874c0eed92e1e8.gif" width="240px;">
+
+<br>I also occasionally stream on twitch <img src="https://64.media.tumblr.com/17d15a346c036ec2376037608d6d244b/f32ef427cb801498-a8/s75x75_c1/3e6c5401d9a41a63c6bec9f6f504b8cfa2df1607.gif"> <br>I stream art, gaming, shiny hunting <br>and other fun things ♡ come hang <br>out when I'm live <img src="https://64.media.tumblr.com/4b8d50cdcdcbe4871721340fceaf712e/f32ef427cb801498-69/s75x75_c1/6c9a3b38894990c5864c2c43e3f12f165bf7b5be.gif"> Ꮚ･ꈊ･Ꮚ <img src="https://64.media.tumblr.com/12b2df1285050981b47f8ef669f4d5f7/f32ef427cb801498-91/s75x75_c1/39dd664228c25786014a79107eefcb0fdb9bff60.gif">
+
+                </p>
+            </div>
+        </div>  
+        <img src="https://64.media.tumblr.com/74fc45a73626fff4c08fb9a10b01d314/f32ef427cb801498-45/s400x600/80ce3e929f6a272ad890250ca56be502c51c9bb1.gif" style="width:275px; position: fixed;z-index: 3;margin-left:230px;margin-top:-220px;">
+    </div>
+    
+    <!-- - - - - - - - - -  - - - - - -->    
+    
+    <div id="stamps">
+        <div class="window" style="width: 300px;height:165px;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="color:black">aaaa</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+            </div>
+            <div class="window-body" style="text-align:center;">
+                <p>
+                    <img src="https://64.media.tumblr.com/f7cb70a11c8fc943a9cd922b6100c874/f32ef427cb801498-0f/s100x200/7c2c57ce605dbf52194f99a8a02702eeb6cb664a.gif"> <img src="https://64.media.tumblr.com/8a0e947833fc09c161cd6c5c2f6aa475/f32ef427cb801498-ea/s250x400/130e532e80b3f38bb066f0d934b8276a549fc685.png" width="105px;">
+                    <img src="https://64.media.tumblr.com/60cfee3f84ee0742e459e6213892648a/f32ef427cb801498-d0/s100x200/593aad3dbb0da2943a23a2af21129b4f04068e32.gif"> <img src="https://64.media.tumblr.com/b1693be63df83a1a0d0ae3f97582b467/f32ef427cb801498-15/s100x200/f24b5339a1a5e538b0453590f811837d1f7839b0.png">
+                </p>
+            </div>
+        </div>  
+    </div> 
+    
+    <!-- - - - - - - - - -  - - - - - -->   
+    
+    <div id="extra" style="z-index: 1;">
+        <div class="window" style="width: 300px;height:200px;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="color:black">Mweh</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+            </div>
+            <div class="window-body" style="text-align:center;">
+                <p>
+                    <img src="https://64.media.tumblr.com/ffd431db7f74930e5be74b2f7b4e052b/f32ef427cb801498-04/s250x400/3bebe010c66891d953b4636bc4c72ee78315cc64.gif" width="165px;">
+                </p>
+            </div>
+        </div>  
+    </div>   
+
+<script> 
+$( "#commission" ).draggable();
+</script>
+
+<script> 
+$( "#longer-about" ).draggable();
+</script> 
+    
+<script> 
+$( "#about" ).draggable();
+</script> 
+
+<script> 
+$( "#extra" ).draggable();
+</script> 
+    
+<script> 
+$( "#stamps" ).draggable();
+</script>    
+
+
+<div id="link-container">
+<table>
+    <tbody>
+        <tr>
+            <td style="width:100px;"></td>   
+            
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:100px;" src="https://64.media.tumblr.com/51fb551d6c0ca4a16cdeb813bdf8ddc4/9e4f0b604cad88a6-4b/s75x75_c1/8f7b2285aa8225dc94c4473ed6182a4600365ad5.png">
+            <a href="/">Twitch</a>            
+            </td>
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:100px;" src="https://64.media.tumblr.com/a75f282fb9b2236cc80f155bb804f574/e6f5fadf47a76a8f-ef/s100x200/42461f0abdfe05fde913b2ae63311e6c5d436d55.png">
+            <a href="/">Tumblr</a>            
+            </td>            
+        </tr>
+        <tr>
+            <td style="width:100px;"></td>   
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:100px;" src="https://64.media.tumblr.com/cc1f9db96b6d6bbe8be8ac77cfead56b/f11a1245282083d1-fd/s250x400/bc67581e8b72d17e57d5408c034854d28a35101d.png">
+            <a href="/">Twitter</a>            
+            </td>            
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:100px;" src="https://64.media.tumblr.com/9fee447078db15a8b9a4353d2dcf5c8d/f32ef427cb801498-ae/s100x200/8a30b83dd0cff520eaede42450aa5e6ae81d1145.png">
+            <a href="/">Toyhouse</a>            
+            </td>            
+        </tr>
+        <tr>
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:100px;" src="https://64.media.tumblr.com/03e5415bd876c1858c1672d7cde846d7/f32ef427cb801498-09/s75x75_c1/3a140bc927c8ad23882852fc03f4c260df891f9e.png">
+            <a href="/">Main Tumblr</a>            
+            </td>
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:80px;" src="https://64.media.tumblr.com/d92b86268aaae503691dddee149b8f3a/f4911c8d320e577b-43/s100x200/d7aafa038e6af6fb9bb0fe6075dff80e12f35780.png">
+            <a href="/">Backlogged</a>            
+            </td>
+            <td style="width:100px;">
+<a href="/"><img style="margin:0 0 10px 0;width:80px;" src="https://64.media.tumblr.com/5800bfc5614da03d760b133d7a6b16be/31e059397bf2f685-fe/s100x200/f9c5f646ba4681100fc73fa4965092743f3adcb3.png">
+            <a href="/">Artfight</a>            
+            </td>            
+        </tr>
+    </tbody>
+</table>
+</div>
+    
+    </body>
+    </html>      
