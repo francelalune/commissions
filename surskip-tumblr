@@ -1,0 +1,737 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <!-- For Cuppy surskip
+        ♡ Thank you for commissioning me!! ♡ --> 
+    
+    
+        <!-- -- -- -- Img -- -- -- -->
+    <meta name="image:favicon" content="">    
+    <meta name="image:icon" content="">    
+    <meta name="image:background" content="">
+    
+    
+        <!-- -- -- -- Color -- -- -- -->
+    <meta name="color:background" content="">
+    
+    <meta name="color:content" content="">
+    <meta name="color:border" content="">
+    <meta name="color:search border" content="">
+    <meta name="color:footer" content="">
+    
+    <meta name="color:text" content="">
+    <meta name="color:link" content="">
+    <meta name="color:link hover" content="">
+    
+    <meta name="color:ask" content="">
+    <meta name="color:ask text" content="">
+    
+    <meta name="color:cursor floaties 1" content="">
+    <meta name="color:cursor floaties 2" content="">
+    <meta name="color:cursor floaties 3" content="">    
+    
+    
+        <!-- -- -- -- Text -- -- -- -->
+    <meta name="text:font size" content="18">
+    <meta name="text:description" content="bio">
+    <meta name="text:footer symbol" content="ꕤ">
+    
+    <meta name="text:description border size" content="2">
+    <meta name="text:content border size" content="2">
+    <meta name="text:footer border size" content="2">
+    
+    
+        <!-- -- -- -- Opt -- -- -- -->
+    <meta name="if:full background" content="">    
+    <meta name="if:link underline" content="">
+    <meta name="if:blue doily border" content="">
+    
+    <meta name="if:snowflake sparkles" content="">
+    
+        <!-- -- -- -- Slct -- -- -- -->
+    <meta name="select:description border" content="solid">  
+    <meta name="select:description border" content="dotted">    
+    <meta name="select:description border" content="dashed">    
+    <meta name="select:description border" content="double">    
+    <meta name="select:description border" content="ridge">    
+    <meta name="select:description border" content="inset">    
+    <meta name="select:description border" content="outset">   
+    <meta name="select:description border" content="none">    
+    
+    <meta name="select:content border" content="solid">  
+    <meta name="select:content border" content="dotted">    
+    <meta name="select:content border" content="dashed">    
+    <meta name="select:content border" content="double">    
+    <meta name="select:content border" content="ridge">    
+    <meta name="select:content border" content="inset">    
+    <meta name="select:content border" content="outset">   
+    <meta name="select:content border" content="none">    
+    
+    <meta name="select:footer border" content="solid">  
+    <meta name="select:footer border" content="dotted">    
+    <meta name="select:footer border" content="dashed">    
+    <meta name="select:footer border" content="double">    
+    <meta name="select:footer border" content="ridge">    
+    <meta name="select:footer border" content="inset">    
+    <meta name="select:footer border" content="outset">   
+    <meta name="select:footer border" content="none">    
+    
+    
+        <!-- -- -- -- Script -- -- -- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="//glen-npf-2020.glitch.me/npf-override.css" rel="stylesheet">
+    <script src="//glen-npf-2020.glitch.me/npf-evenize.js"></script>
+    
+    <link rel="stylesheet" href="https://figgypudding.neocities.org/scroll.css">
+    
+    <link rel="shortcut icon" href="{image:favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"> 
+    {block:Description}
+    <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <title>{Title}</title>  
+
+{block:ifsnowflakesparkles}
+<script type="text/javascript">
+// <![CDATA[
+var colours=new Array('{color:cursor floaties 1}', '{color:cursor floaties 2}', '{color:cursor floaties 3}'); // colours of the hearts
+var minisize=15; // smallest size of hearts in pixels
+var maxisize=20; // biggest size of hearts in pixels
+var hearts=66; // maximum number of hearts on screen
+var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+ 
+/*****************************
+*JavaScript Love Heart Cursor*
+*  (c)2013+ mf2fm web-design *
+*   http://www.mf2fm.com/rv  *
+*  DON'T EDIT BELOW THIS BOX *
+*****************************/
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var herz=new Array();
+var herzx=new Array();
+var herzy=new Array();
+var herzs=new Array();
+var kiss=false;
+ 
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+ 
+addRVLoadEvent(mwah);
+ 
+function mwah() { if (document.getElementById) {
+  var i, heart;
+  for (i=0; i<hearts; i++) {
+    heart=createDiv("auto", "auto");
+    heart.style.visibility="hidden";
+	heart.style.zIndex=(over_or_under=="over")?"1001":"0";
+    heart.style.color=colours[i%colours.length];
+	heart.style.pointerEvents="none";
+    if (navigator.appName=="Microsoft Internet Explorer") heart.style.filter="alpha(opacity=75)";
+    else heart.style.opacity=0.75;
+    heart.appendChild(document.createTextNode(String.fromCharCode(10052)));
+    document.body.appendChild(heart);
+    herz[i]=heart;
+	herzy[i]=false;
+  }
+  set_scroll();
+  set_width();
+  herzle();
+}}
+ 
+function herzle() {
+  var c;
+  if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+    ox=x;
+    oy=y;
+    for (c=0; c<hearts; c++) if (herzy[c]===false) {
+	  herz[c].firstChild.nodeValue=String.fromCharCode(10052);
+      herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+      herz[c].style.top=(herzy[c]=y-minisize)+"px";
+      herz[c].style.fontSize=minisize+"px";
+	  herz[c].style.fontWeight='normal';
+      herz[c].style.visibility='visible';
+      herzs[c]=minisize;
+      break;
+    }
+  }
+  for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+  setTimeout("herzle()", 40);
+}
+ 
+document.onmousedown=pucker;
+document.onmouseup=function(){clearTimeout(kiss);};
+ 
+function pucker() {
+  ox=-1;
+  oy=-1;
+  kiss=setTimeout('pucker()', 100);
+}
+ 
+function blow_me_a_kiss(i) {
+  herzy[i]-=herzs[i]/minisize+i%2;
+  herzx[i]+=(i%5-2)/5;
+  if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+    herz[i].style.visibility="hidden";
+    herzy[i]=false;
+  }
+  else if (herzs[i]>minisize+2 && Math.random()<.5/hearts) break_my_heart(i);
+  else {
+    if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+    herz[i].style.top=herzy[i]+"px";
+    herz[i].style.left=herzx[i]+"px";
+  }
+}
+ 
+function break_my_heart(i) {
+  var t;
+  herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+  herz[i].style.fontWeight='bold';
+  herzy[i]=false;
+  for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+  setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+}
+ 
+document.onmousemove=mouse;
+function mouse(e) {
+  if (e) {
+    y=e.pageY;
+    x=e.pageX;
+  }
+  else {
+    set_scroll();
+    y=event.y+sdown;
+    x=event.x+sleft;
+  }
+}
+ 
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+ 
+window.onscroll=set_scroll;
+function set_scroll() {
+  if (typeof(self.pageYOffset)=='number') {
+    sdown=self.pageYOffset;
+    sleft=self.pageXOffset;
+  }
+  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+    sdown=document.body.scrollTop;
+    sleft=document.body.scrollLeft;
+  }
+  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft=document.documentElement.scrollLeft;
+    sdown=document.documentElement.scrollTop;
+  }
+  else {
+    sdown=0;
+    sleft=0;
+  }
+}
+ 
+function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+}
+// ]]>
+</script>
+{/block:ifsnowflakesparkles}
+    
+    <style type="text/css">
+
+    /*************************************
+                DOCUMENT BODY
+    *************************************/
+    
+    body{
+        font-size:{text:font size}px;
+        background-attachment:fixed;
+        word-wrap:break-word;        
+        {block:iffullbackground} 
+        background-size: cover;
+        {/block:iffullbackground}        
+        background-color:{color:background};
+        word-wrap:break-word;
+        font-family:arial;
+        color:{color:text};
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    a{
+        color:{color:link};  
+        text-decoration:none;
+        {block:iflinkunderline}
+        text-decoration:underline;
+        {/block:iflinkunderline}
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+
+    a:hover{
+        color:{color:link hover};
+        text-decoration:none;
+        {block:iflinkunderline}
+        text-decoration:underline;
+        {/block:iflinkunderline}
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    .npf_row{
+        margin: 0 !important;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    blockquote{
+        border-left:1px solid {color:text};
+        padding-left:10px;
+        margin: 15px;}
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    p{
+        margin:0 0 5px 0;
+        padding:0;}     
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    :root {
+        --NPF-Image-Spacing:4px;
+        --NPF-Bottom-Gap-From-Captions:1em;}  
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+        
+    ::selection{ 
+        color:{color:text selection}; 
+        background-color:{color:text selection bg};}
+    
+    
+    /*************************************
+                    CONTENT
+    *************************************/
+    
+    #content{
+        margin-left:400px;
+        width:500px;
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    .post{
+        border:{text:content border size}px {select:content border} {color:border};
+        margin:10px 0 10px 0;
+        background-color:{color:content};
+        {block:ifbluedoilyborder}
+        border-width:{text:content border size}px;
+        border-style:solid;
+        border-image: url("https://64.media.tumblr.com/509c143624fb4ca4bece97e603b14ca8/8205a53c134ea1d9-52/s400x600/18a3cf0bc60bf55b9892f5eda54ce9de9bf7b2a8.gif") 55 fill round;
+        {/block:ifbluedoilyborder}      
+        padding:5px;
+    }
+ 
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    .post img{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    .footer{
+        background-color:{color:footer};
+        padding:15px;
+        border:{text:footer border size}px {select:footer border} {color:footer border};
+    }
+    
+    
+    
+    /*************************************
+                    SIDEBAR
+    *************************************/
+    
+    #sidebar{
+        margin-left:100px;
+        position:fixed;
+        width:220px;
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    #description{
+        padding:5px;
+        max-height:150px;
+        overflow-y:auto;
+        text-align:center;
+        background-color:{color:content};        
+        border:{text:description border size}px {select:description border} {color:border};
+        {block:ifbluedoilyborder}
+        border-width:{text:description border size}px;
+        border-style:solid;
+        border-image: url("https://64.media.tumblr.com/509c143624fb4ca4bece97e603b14ca8/8205a53c134ea1d9-52/s400x600/18a3cf0bc60bf55b9892f5eda54ce9de9bf7b2a8.gif") 55 fill round;
+        {/block:ifbluedoilyborder}          
+    }
+ 
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    .search{
+        width:156px;
+        height:10px;
+        margin-top:10px;
+        padding:10px;
+        font-size:12px;
+        border-radius:5px;
+        color:{color:text};
+        border:1px solid {color:search border};
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+
+    .enter{
+        padding:7px;
+        border:1px solid {color:search border};
+        border-radius:5px;
+    }
+    
+    
+    
+    /*************************************
+                    STYLE
+    *************************************/  
+    
+    .title{
+        font-size:30px;
+        font-weight:bold;
+    }
+
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+    
+    ol.notes{
+        list-style-type:none;
+        padding:3px;
+        text-align:left;
+        overflow:auto;
+    } 
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */            
+    
+    #audioplayer{ 
+        width:30px; 
+        height:25px; 
+        overflow:hidden; 
+        position:absolute; 
+        margin-top:40px; 
+        margin-bottom:40px; 
+        margin-left:35px; 
+        border-radius: 40px; 
+        opacity: 0.7;
+    } 
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+ 
+    .trackstuff{ 
+        overflow:auto; 
+        margin-left:110px; 
+        margin-top:-75px; 
+        margin-bottom:50px; 
+        display:block;
+    }  
+ 
+     /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+ 
+    .playbutton{ 
+        margin-bottom:30px; 
+        margin-top:-60px; 
+        margin-left:35px; 
+        z-index:9; 
+        width:33px; 
+        height:30px; 
+        overflow:hidden;
+    } 
+ 
+     /* . . . . . . . . . . . . . . . . . . . . . . . . . */
+ 
+    video{ 
+        max-width: 100%; 
+        height: auto;
+    } 
+        
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */    
+    
+    .question{
+        color:{color:ask text};
+        background:transparent;
+    }
+ 
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */     
+ 
+    .bubble {
+        position: relative;
+        margin-left:20px;
+        width: 330px;
+        text-align:center;
+        background:{color:ask};
+        border-radius: 10px;
+        padding:15px;
+        margin-top:5px;
+    }
+    
+    /* . . . . . . . . . . . . . . . . . . . . . . . . . */        
+ 
+    .bubble:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-color: transparent {color:ask};
+        border-width: 20px 20px 20px 0;
+        top: 50%;
+        left: -20px;
+        margin-top: -20px;
+    }
+ 
+     /* . . . . . . . . . . . . . . . . . . . . . . . . . */    
+ 
+    .asker{
+        margin:0 0 5px 0;
+    }    
+    
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>      
+    <div id="sidebar">
+        <center><a href="/"><img src="{image:icon}"></a></center>
+        <div id="description">
+            {text:description}
+        </div>
+        <div id="searching">
+            <form action="/search" method="get">
+            <input class="search" type="text" placeholder="{text:searchbar text}" name="q" value="" style="outline:none;">
+            <input class="enter" type="submit" value="GO!" id="sb"/>
+</form>
+        </div>
+    </div>
+
+        <div id="content"> 
+        {block:Posts} 
+ 
+            <!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> {block:ContentSource}<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo}-->
+{/block:ContentSource}
+ 
+                <div class="post">
+                    <div class="posts" post-type="{PostType}">
+ 
+ 
+            <!-- -- -- Images -- -- -->
+    {block:Photo}
+            {LinkOpenTag}
+                            <center><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>            </center>    
+
+            {LinkCloseTag}
+        {block:Caption}
+            {Caption}
+        {/block:Caption}
+    {/block:Photo}
+    {block:Photoset}
+                        <center><div class="media">{Photoset}</div></center> 
+        {block:Caption}
+            <div class="caption">
+                {Caption}
+            </div>
+        {/block:Caption}
+    {/block:Photoset}
+ 
+            <!-- -- -- text, quotes, links -- -- -->
+ 
+    {block:Text}
+        {block:Title}
+            <div class="title">{Title}</div>
+        {/block:Title}
+            {Body}
+    {/block:Text}
+ 
+ 
+    {block:Chat}
+        {block:Title}
+            <div class="title">
+                <h3><a href="{Permalink}">{Title}</a></h3></div>
+        {/block:Title}
+        {block:Lines}
+            <div class="{Alt} user_{UserNumber}">
+        {block:Label}
+            <span class="label">{Label}</span>
+        {/block:Label}
+        {Line}
+            </div>
+        {/block:Lines}
+    {/block:Chat}
+ 
+ 
+    {block:Quote}
+        <div class="quote">
+            "{Quote}"
+            {block:Source}
+                <div class="source">
+                    - <i>{Source}</i>
+                </div>
+            {/block:Source}
+        </div>
+    {/block:Quote}    
+ 
+    {block:Link}
+        <a href="{URL}" class="link" {Target}>{Name}</a>
+        {block:Description}
+            {Description}
+        {/block:Description}
+    {/block:Link}
+ 
+ 
+            <!-- -- -- audio & video -- -- -->
+ 
+    {block:Video}
+        {Video-500}
+        {block:Caption}
+            {Caption}
+        {/block:Caption}
+    {/block:Video}
+ 
+    {block:Audio}
+        <div id= "audioplayer">{AudioPlayerWhite}</div>
+    {block:AlbumArt}
+        <div id="albumart">
+            <img src="{AlbumArtURL}" width="100">  
+        </div>
+    {/block:AlbumArt}
+        <div class="trackstuff">
+            {block:TrackName}
+                <b><i>{TrackName}</i></b>
+            {/block:TrackName}
+            <br>{block:Artist}
+                <i>{Artist}</i>
+            {/block:Artist}
+        </div>
+        {Caption}
+    {/block:Audio}    
+ 
+            <!-- -- -- asks -- -- -->
+ 
+{block:Answer}
+        <div class="question">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="asker">{Asker}</div>
+                        <p><img src="{AskerPortraitURL-128}" style="width:95px; display:block;border-radius:100%;"></td>                    
+                        <td style="width:350px;"><div class="bubble">{Question}</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="caption">
+            {Answer}
+        </div>
+{/block:Answer}
+ 
+ 
+            <!-- -- -- footer -- -- -->
+ 
+ 
+     {block:Date}
+        <div class="footer">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width:600px">
+                            {TimeAgo}
+                            
+                            <br>
+                            
+                            {block:HasTags}
+                                <div class="tags">
+                                    {block:Tags}
+                                        #<a href="{TagURL}">{Tag}</a> 
+                                    {/block:Tags}
+                                </div>
+                            {/block:HasTags} 
+                        </td>
+                        <td style="width:150px;">
+                            <a href="{Permalink}">
+                                {block:NoteCount}
+                                    {NoteCount}%
+                                {/block:NoteCount}
+                            </a>
+                            {text:footer symbol} 
+                            <a href="{ReblogUrl}">&#8634;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+ 
+                        {block:PermalinkPage}
+                            <div class="notes">
+                                {block:PostNotes}
+                                    {PostNotes}
+                                {/block:PostNotes}
+                            </div>    
+                        {/block:PermalinkPage}
+                
+            <!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> 
+        </div>
+    {/block:Date}
+                </div>
+            </div>
+    {/block:Posts} 
+
+    <img src="https://64.media.tumblr.com/a074cf9c26179423cdd7c2da4daf65c3/24095a636427b16b-23/s640x960/9920b745597401c9eb3aeab52adb425380b5b277.png" style="position:fixed;bottom:0px;left:0px;z-index:5;width:700px">
+    
+    </div>
+    
+    <div style="bottom:5px;right:5px;font-size:20px;position:fixed;"><a title="Theme by France" href="https://cloverparty.tumblr.com/tagged/mine">★</a></div>
+    
+    </body>
+    </html>      
