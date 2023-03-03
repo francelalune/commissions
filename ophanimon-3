@@ -1,0 +1,55 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <link rel="shortcut icon" href="/">
+    
+    <style type="text/css">
+    
+    #container{
+        position:absolute;
+        left: 50%;
+        top:50%;
+        transform: translateY(-50%) translateX(-50%);
+        border:3px solid;
+        width:550px;
+        height:575px;
+    }
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <!-- first box -->
+            <div style="border:1px solid;margin-top:15px;margin-left:45px;width:450px;height:210px;padding:5px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="/" style="width:200px;">
+                            </td>
+                            <td style="width:240px;height:30px;text-align:center;font-size:40px;font-weight:bold;">
+                                NAME
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!-- first box -->    
+                
+            <!-- second box -->    
+            <div style="margin-top:15px;">
+                <div style="border:1px solid;width:450px;padding:5px;font-size:40px;text-align:center;height:310px;overflow-y:auto;margin-left:-6px;">
+                    <center>    
+                           
+                    </center>    
+                </div>
+            </div>
+            <!-- second box -->    
+        </div>
+    </div>    
+    </body>
+    </html>    
