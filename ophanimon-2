@@ -1,0 +1,83 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <link rel="shortcut icon" href="/">     
+    
+    <style type="text/css">
+    
+    #container{
+        position:absolute;
+        left: 50%;
+        top:50%;
+        transform: translateY(-50%) translateX(-50%);
+        border:3px solid;
+        width:550px;
+        height:575px;
+    }
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div style="border:1px solid;margin-top:15px;margin-left:45px;width:450px;height:150px;padding:5px;text-align:center;overflow-y:auto">
+            <!-- first text -->
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+            <!-- first text -->    
+            </div>
+            
+            <div style="margin-top:15px;">
+                <div style="border:1px solid;margin-top:35px;margin-left:45px;width:450px;padding:5px;font-size:40px;text-align:center;height:315px;overflow-y:auto;">
+                    <center>    
+                        <table>
+                            <tbody>
+                            <!-- first image row  -->
+                                <tr>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:20px 10px 20px 10px;display:block;">
+                                    </td>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:0 10px 0 10px;display:block;">
+                                    </td>   
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:0 10px 0 10px;display:block;">
+                                    </td>                                
+                                </tr>
+                            <!-- second image row  -->
+                                <tr>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>   
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>                                
+                                </tr>
+                            <!-- third image row  -->
+                                <tr>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>   
+                                    <td>
+                                        <img src="" style="border:1px solid black;height:100px;width:100px;margin:10px 10px 10px 10px;display:block;">
+                                    </td>                                
+                                </tr>                                
+                            </tbody>
+                        </table>   
+                    </center>    
+                </div>
+            </div>
+    </div>    
+    </body>
+    </html>    
