@@ -1,0 +1,56 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <link rel="shortcut icon" href="/">    
+    
+    <style type="text/css">
+    
+    #container{
+        position:absolute;
+        left: 50%;
+        top:50%;
+        transform: translateY(-50%) translateX(-50%);
+        border:3px solid;
+        width:650px;
+        height:450px;
+    }
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+    
+        <div id="container">
+            <div style="border:1px solid;margin-top:15px;margin-left:45px;width:550px;height:150px;padding:5px;text-align:center;overflow-y:auto">
+            <!-- text within first box -->
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                <!-- -->
+            </div>
+            
+            <div style="height:240px;overflow-y:auto;margin-top:15px;">
+            <!-- first link -->
+                <!-- copy and paste to add new links! -->            
+                <div style="border:1px solid;margin-top:35px;margin-left:45px;width:550px;height:50px;padding:5px;font-size:40px;text-align:center;">
+                    <a href="/">OC WORLD 1</a>
+                </div>
+            
+            <!-- second link -->    
+                <div style="border:1px solid;margin-top:35px;margin-left:45px;width:550px;height:50px;padding:5px;font-size:40px;text-align:center;">
+                    <a href="/">OC WORLD 2</a>
+                </div>
+                
+            <!-- third link -->
+                <div style="border:1px solid;margin-top:35px;margin-left:45px;width:550px;height:50px;padding:5px;font-size:40px;text-align:center;">
+                    <a href="/">OC WORLD 3</a>
+                </div>  
+            </div>
+            
+        </div>
+    </body>
+    </html>    
