@@ -1,0 +1,221 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <link rel="shortcut icon" href="https://emoemo.girly.jp/i/snowman/snowman_11.gif">
+    <title>4fohv</title>
+    
+    
+    <style type="text/css">
+
+    /**********************************
+        
+               DOCUMENT BODY
+        
+    **********************************/
+    
+    body{
+        font-size:18px;
+    }
+    
+    /* - - - - - - - - - - - - - */
+
+    a{
+        color:blue;
+    }
+    
+    /* - - - - - - - - - - - - - */
+
+    a:hover{
+        color:red;
+    }
+    
+    /**********************************
+        
+                CONTAINERS
+        
+    **********************************/
+    
+    #container{
+        width:900px;
+        height:575px;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border:1px solid;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    #content{
+        border:1px solid;
+        margin-top:20px;
+        height:530px;
+        width:850px;
+        left: 50%;
+        position:absolute;
+        transform: translateX(-50%);        
+    }
+    
+    /**********************************
+        
+                  CONTENT
+        
+    **********************************/   
+    
+    #left-sidebar{
+        border:1px solid red;
+        float:left;
+        padding:10px;
+        margin-top:30px;
+        border-radius:20px;
+        width:225px;
+        height:445px;
+        margin-left:20px;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    #right-sidebar{
+        border:1px solid red;
+        float:right;
+        border-radius:20px;
+        padding:10px;
+        margin-top:30px;
+        width:525px;
+        height:445px;
+        margin-right:20px;
+    }    
+    
+    
+    /**********************************
+        
+                   STYLE
+        
+    **********************************/     
+    
+    #update-log{
+        border:1px solid;
+        margin:10px 0 10px 0;
+        height:195px;
+        overflow-y:auto;
+        overflow-x:hidden;
+        padding:5px;
+    }
+    
+    /* - - - - - - - - - - - - - */    
+    
+    .button{
+        background:transparent;
+        border-radius:5px;}
+
+    /* - - - - - - - - - - - - - */
+    
+    .button:hover{
+        cursor:help;}    
+    
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+                <div id="left-sidebar">
+                    <img src="https://64.media.tumblr.com/55c8d7693bc9c4be57d71259272c75a4/tumblr_p49geuB9SI1w7wjfyo1_250.png" style="width:100%">
+                    
+                    <div id="update-log">
+                        Update log...
+                    </div>
+                    
+                    <audio id="music" src="https://files.catbox.moe/w57jfk.mp3"></audio>
+<button style="border:1px soid;width:100%" onclick="playpause()"><div class="button"><img src="https://hosting.photobucket.com/albums/o260/mhilka/minigifs/minigif01.gif"> <marquee style="width:195px; font-size:18px;">Wherever You Are by DJ Laava</marquee></div></button>
+<script>
+	let player = document.getElementById("music"); //the audio id
+    let btn = document.getElementById("btn"); //the button id
+    isPlaying = false; //set to false because it is not playing yet
+ 
+    function playpause() {
+        if (!isPlaying) play(); //if isPlaying is false, then play the music
+        else pause(); //if isPlaying is true, then pause the music
+    }
+ 
+    function play(){
+        player.play(); //play the music
+        isPlaying = true; //set to true because the music is playing
+        btn.innerHTML = "pause"; //change the button to say pause
+    }
+ 
+    function pause(){
+        player.pause(); //pause the music
+        isPlaying = false; //set to false because the music is not playing
+        btn.innerHTML = "play"; //change the button to say play
+    }
+ 
+    player.onended = function(){
+        isPlaying = false; //the song has ended, isPlaying is false
+        btn.innerHTML = "play"; //change the button to say play
+    }
+</script>
+                    
+                </div>
+                <div id="right-sidebar" style="text-align:center;">
+                
+                <div id="tab-contents" style="position:fixed;border:1px solid;height:432px;padding:5px;border-radius:20px;width:515px;overflow-y:auto;">
+
+                    <div id="one" style="visibility:hidden;">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                    </div>
+                    <div id="two" style="visibility:hidden;">
+                        Two
+                    </div>
+                    <div id="three" style="visibility:hidden;">
+                        Three
+                    </div>
+                    <div id="four" style="visibility:hidden;">
+                        Four
+                    </div>
+                    <div id="five" style="visibility:hidden;">
+                        Five
+                    </div>
+                </div>   
+<!-- its recommended not to edit the tds, but instead the div styles to change text, colors, so on -->
+                    <table>
+                        <tr>
+                            <td id="open" onclick="document.getElementById('tabs').innerHTML=document.getElementById('one').innerHTML;"><div style="position:fixed;right:-41px;margin-top:10px;border-top:1px solid blue;border-right:1px solid blue;border-bottom:1px solid blue;bottom-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px;width:50px;padding:5px;text-align:center;background:white;">One</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="document.getElementById('tabs').innerHTML=document.getElementById('two').innerHTML;"><div style="position:fixed;right:-41px;margin-top:45px;border-top:1px solid blue;border-right:1px solid blue;border-bottom:1px solid blue;bottom-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px;width:50px;padding:5px;text-align:center;background:white;">Two</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td onclick="document.getElementById('tabs').innerHTML=document.getElementById('three').innerHTML;"><div style="position:fixed;right:-41px;margin-top:80px;border-top:1px solid blue;border-right:1px solid blue;border-bottom:1px solid blue;bottom-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px;width:50px;padding:5px;text-align:center;background:white;">Three</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="document.getElementById('tabs').innerHTML=document.getElementById('four').innerHTML;"><div style="position:fixed;right:-41px;margin-top:115px;border-top:1px solid blue;border-right:1px solid blue;border-bottom:1px solid blue;bottom-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px;width:50px;padding:5px;text-align:center;background:white;">Four</div>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td onclick="document.getElementById('tabs').innerHTML=document.getElementById('five').innerHTML;"><div style="position:fixed;right:-41px;margin-top:150px;border-top:1px solid blue;border-right:1px solid blue;border-bottom:1px solid blue;bottom-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px;width:50px;padding:5px;text-align:center;background:white;">Five</div>
+                            </td>
+                        </tr>  
+                    </table>
+                    <!-- dont edit -->
+                            <div id="tabs"></div>
+                    <!-- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script>
+      document.getElementById("open").click();
+    </script>        
+        
+    </body>
+    </html> 
