@@ -1,0 +1,261 @@
+    <!DOCTYPE HTML>
+    <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <link rel="shortcut icon" href="https://emoemo.girly.jp/i/snowman/snowman_11.gif">
+    <title>wolftattoo</title>
+    
+    
+    <style type="text/css">
+
+    /*********************************
+    
+                DOCUMENT BODY
+            Basic stuff like text,
+        background color, fonts and 
+            sizes, cursors, etc. 
+            
+        I also like to put things
+          like the scrollbar and 
+         links under this section.
+    
+    *********************************/    
+    
+    body{
+        background:white;
+        font-family:arial;
+        color:black;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    a{
+        color:blue;
+        text-decoration:underline;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    a:hover{
+        color:red;
+        text-decoration:line-through
+    }
+    
+    
+    /*********************************
+    
+                 CONTAINER
+        The container is the space
+        holding everything together.
+        You would edit this to move 
+      all of the content at once, etc.
+    
+    *********************************/    
+    
+    #container{
+        width:790px;
+        position:absolute;
+        height:615px;
+    }
+    
+    
+    /*****************************
+    
+                CONTENT
+        Everything within your
+        container.
+    
+    *****************************/    
+    
+    #title{
+        width:772px;
+        border:1px solid;
+        padding:5px;
+        height:75px;
+    }
+    
+    /* - - - - - - - - - - - - - */
+
+    #links{
+        float:left;
+        height:400px;
+        width:150px;
+        padding:5px;
+        border:1px solid red;
+        margin:10px 5px 5px 0;
+    }
+
+    /* - - - - - - - - - - - - - */
+    
+    #blinkies{
+        float:left;
+        padding:5px;
+        height:85px;
+        width:150px;
+        border:1px solid blue;
+        bottom:0px;
+        overflow-y:auto;
+        position:absolute;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    #content{
+        height:160px;
+        width:605px;
+        float:left;
+        left:170px;
+        overflow-y:auto;
+        padding:5px;
+        border:1px solid red;
+        margin-top:10px;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    #divider{
+        height:25px;
+        width:605px;
+        float:left;
+        left:170px;
+        padding:5px;
+        border:1px solid blue; 
+        margin-top:10px;
+    }
+    
+    /* - - - - - - - - - - - - - */
+    
+    #content2{
+        height:170px;
+        width:605px;
+        float:left;
+        left:170px;
+        padding:5px;
+        overflow-y:auto;
+        border:1px solid blue; 
+        margin-top:10px;
+    }    
+
+    /* - - - - - - - - - - - - - */
+    
+    #content3{
+        height:85px;
+        width:605px;
+        float:left;
+        left:170px;
+        padding:5px;
+        overflow-y:auto;
+        border:1px solid blue; 
+        margin-top:10px;
+    }
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+        
+            <!------------------------
+            
+                       Title 
+            
+            ------------------------->
+            <div id="title">
+                Title
+            </div>
+            
+            <!------------------------
+            
+                       Links 
+            
+            ------------------------->            
+            
+            <div id="links">
+                <a href="/">Link 1</a>
+                <br><a href="/">Link 2</a>
+                <br><a href="/">Link 3</a>
+            </div>
+            
+            <!------------------------
+            
+                      Blinkies 
+            
+            ------------------------->            
+            
+            <div id="blinkies">
+                Blinkie
+            </div>
+            
+            <!------------------------
+            
+                      Content 
+            
+            ------------------------->            
+            
+            <div id="content">
+                <table style="float:left;">
+                    <tbody>
+                        <tr>
+                        
+                            <td>
+                                <img src="https://64.media.tumblr.com/51f78150e63fef273a596a0aeffb1e50/337525159d5de259-31/s1280x1920/3ce9f6b7e52a41b6a42c09cc85ad2d7105504256.gif" style="border:1px solid;width:150px;height:auto;display:block;">
+                            </td>
+                            
+                            <td>
+                                Text
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="https://64.media.tumblr.com/51f78150e63fef273a596a0aeffb1e50/337525159d5de259-31/s1280x1920/3ce9f6b7e52a41b6a42c09cc85ad2d7105504256.gif" style="border:1px solid;position:fixed;float:right;margin-top:-20px;margin-left:350px;width:100px;height:100px;">
+            </div>
+            
+            <!------------------------
+            
+                      Divider 
+            
+            ------------------------->            
+            
+            <div id="divider">
+                
+            </div>
+            
+            <!------------------------
+            
+                     Content 2 
+            
+            ------------------------->            
+            
+            <div id="content2">
+                <table>
+                    <tbody>
+                        <tr>
+                        
+                            <td style="padding-right:15px;">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                            </td>
+                            
+                            <td>
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!------------------------
+            
+                     Content 3 
+            
+            ------------------------->            
+            
+            <div id="content3">
+                
+            </div>
+        </div>
+    </body>
+    </html> 
