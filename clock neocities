@@ -1,0 +1,318 @@
+    <!DOCTYPE HTML>
+    <head>
+    <meta charset="utf-8" />
+
+    <title>Clock</title>
+
+<!-- thanks for commissioning me ! -->
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="shortcut icon" href="/">
+
+    
+
+    <style type="text/css">
+
+    
+
+    body{
+        font-size:18px;
+        font-family:arial;
+        color:black;
+    }
+
+    
+
+    /******************************
+
+    
+
+               CONTAINER
+
+    
+
+    ******************************/
+
+    
+
+    #container{
+
+        width:850px;
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */
+
+    
+
+    #content-container{
+        height:auto;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */
+
+        
+
+    #header{
+        text-align:center;
+        border:1px solid;
+        height:100px;
+    }
+
+    
+
+    /******************************
+
+    
+
+             LEFT CONTENT
+
+    
+
+    ******************************/    
+
+    
+
+    #left{
+        height:605px;
+        margin:10px 0 10px 0;
+        width:215px;
+        float:left;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */        
+
+    
+
+    #sidebar{
+        border:1px solid;
+        margin:0 0 10px 0;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */    
+
+    
+
+    #left-textbox-1{
+        border:1px solid;
+        margin:0 0 10px 0;
+        /* remove height for it to adjust size to fit content */
+        height:196px;
+        padding:5px;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */    
+
+    
+
+    #left-textbox-2{
+        border:1px solid;
+        padding:5px;
+        height:196px;
+    }    
+
+    
+
+    /******************************
+
+    
+
+             RIGHT CONTENT
+
+    
+
+    ******************************/      
+
+    
+
+    #right{
+        float:right;
+        width:610px;
+        margin:10px 0 10px 0;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */     
+
+    
+
+    #right-textbox{
+        border:1px solid red;
+        padding:5px;
+        overflow-y:auto;
+        height:285px;
+        margin:0 0 10px 0;
+    }
+
+    
+
+    /* . . . . . . . . . . . . . . */     
+
+    
+
+    #right-textbox2{
+        overflow-y:auto;
+        border:1px solid red;
+        padding:5px;
+        height:285px;
+    }    
+
+    
+
+    /******************************
+
+    
+
+             RIGHT CONTENT
+
+    
+
+    ******************************/  
+
+    
+
+    #footer{
+        border:1px solid red;
+        float:right;
+        padding:5px;
+        width:838px;
+        margin:0 0 10px 0;
+        text-align:center;
+
+        
+
+    }
+
+    
+
+    {CustomCss}
+    </style>
+    </head>
+        <body>
+            <div id="container">
+                <div id="header">
+                    <center>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                    Lorem ipsum dolor sit amet, 
+
+                                    <br>consectetur adipiscing elit, sed do eiusmod tempor
+
+                                </td>
+                                <td>
+
+                                    <img src="/" style="display:block;width:90px;height:90px;border:1px solid;">
+
+                                </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    </center>
+                </div>
+
+                    
+
+                <div id="content-container">
+                    <div id="left">
+
+                        <div id="sidebar">
+
+                            <img src="" style="display:block;width:100%;height:165px">
+
+                        </div>
+
+                   
+                        <div id="left-textbox-1">
+
+                            <!-- Body -->
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa enim nec dui nunc mattis enim. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Eget duis at tellus at. Leo urna molestie at elementum eu facilisis.
+                        </div>
+
+                    
+                        <div id="left-textbox-2">
+
+                            <!-- Body -->
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa enim nec dui nunc mattis enim. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Eget duis at tellus at. Leo urna molestie at elementum eu facilisis.
+
+                        </div>                    
+                    </div>
+
+                
+
+                    <div id="right">
+                        <div id="right-textbox">
+
+                            <!-- Body --> 
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa enim nec dui nunc mattis enim. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Eget duis at tellus at. Leo urna molestie at elementum eu facilisis. In tellus integer feugiat scelerisque. At tellus at urna condimentum. Nunc lobortis mattis aliquam faucibus purus in. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+
+                            
+
+                            <p>Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Nibh ipsum consequat nisl vel pretium lectus quam id. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Quis hendrerit dolor magna eget est lorem. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.
+
+                            
+
+                            <p>Accumsan lacus vel facilisis volutpat est velit. Aenean et tortor at risus. Et molestie ac feugiat sed. Rhoncus dolor purus non enim praesent elementum facilisis leo vel.
+
+                        </div>
+                        
+                        <div id="right-textbox2">
+
+                            <!-- Body --> 
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa enim nec dui nunc mattis enim. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Eget duis at tellus at. Leo urna molestie at elementum eu facilisis. In tellus integer feugiat scelerisque. At tellus at urna condimentum. Nunc lobortis mattis aliquam faucibus purus in. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+
+                            
+
+                            <p>Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Nibh ipsum consequat nisl vel pretium lectus quam id. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Quis hendrerit dolor magna eget est lorem. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.
+
+                            
+
+                            <p>Accumsan lacus vel facilisis volutpat est velit. Aenean et tortor at risus. Et molestie ac feugiat sed. Rhoncus dolor purus non enim praesent elementum facilisis leo vel.
+
+                        </div>                        
+                    </div>
+
+                
+
+                    <div id="footer">
+
+                        <!-- Body -->
+
+                        Footer
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <img src="" style="position:fixed;bottom:5px;right:5px;border:1px solid;width:100px;height:100px;">
+
+            
+
+        </body>
+    </html>      
