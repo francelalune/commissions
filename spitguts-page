@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+    <head>
+    <meta charset="utf-8" />
+    <!-- 
+        **************************************    
+                   Page For @Spitguts
+        **************************************
+
+             Thanks for commissioning me!!
+        Contact any time if there are any issues     
+        
+    -->    
+    
+    <title>{Title}</title>
+    
+<script>var documentTitle = document.title + " ☆ ";
+
+(function titleMarquee() {
+    document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0,1);
+    setTimeout(titleMarquee, 200);
+})();</script> 
+    
+    <link rel="shortcut icon" href="https://64.media.tumblr.com/d491814453457d6b54839d61e34b037e/465e218dd10ca486-26/s75x75_c1/cdd1684a70f3272a6133ac47f1339fa2254d4dd5.gif">
+    
+    
+    <style type="text/css">
+    
+    /*******************************
+    
+              DOCUMENT BODY
+    
+    *******************************/
+    
+    body{
+        background-color:white;
+        background-image:url('url_here');
+        font-size:17px;
+        font-family:arial;
+        color:black;
+        word-wrap:break-word;
+        cursor:url("url_here"), default;
+    }
+    
+    /* . . . . . . . . . . . . . */
+    
+    a{
+        color:blue;
+        text-decoration:underline wavy blue;
+    }
+    
+    /* . . . . . . . . . . . . . */
+    
+    a:hover{
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+    }
+    
+    /* . . . . . . . . . . . . . */    
+    
+    ::selection{ 
+    color:white; 
+    background-color:black;}       
+    
+    /* . . . . . . . . . . . . . */    
+    
+     ::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;}
+ 
+     /* . . . . . . . . . . . . . */
+ 
+    ::-webkit-scrollbar-thumb:vertical{
+    background:black;
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+    
+    /* . . . . . . . . . . . . . */    
+ 
+    ::-webkit-scrollbar-track {
+    background:white;}    
+    
+    
+    /*******************************
+    
+                 CONTENT
+    
+    *******************************/
+    
+    #container{
+        overflow:hidden;
+        left: 50%;
+        transform: translateX(-50%);
+        width:750px;
+        position:absolute;
+        border:1px solid;
+    }
+    
+     /* . . . . . . . . . . . . . */    
+    
+    #content{
+        text-align:center;
+        padding:5px;
+    }
+    
+     /* . . . . . . . . . . . . . */    
+    
+    #title{
+        font-size:25px;
+        margin:5px 0 5px 0;
+    }
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+                <img src="https://64.media.tumblr.com/fb9f0383d3cea058443c3636cfe66b91/6462efdbc4a84a8b-d8/s400x600/3347f32933432fb0cb417838b38b36b42f613ce4.gif">
+                <p><text id="title">Title</text>
+                
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis egestas. Mollis aliquam ut porttitor leo a diam. At consectetur lorem donec massa sapien faucibus et molestie ac. Est placerat in egestas erat. Vitae semper quis lectus nulla. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis.
+                
+                <p><a href="/">Link</a>
+                
+            </div>
+        </div>
+    </body>
+</html>     
