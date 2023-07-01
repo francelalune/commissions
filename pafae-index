@@ -1,0 +1,374 @@
+    <!DOCTYPE HTML>
+    <head>
+    <meta charset="utf-8" />
+    <!-- 
+    
+                Thank you for commissioning me !! 
+    Contact at any time for any concerns, or any questions
+    
+    
+            CHOOSE A WEB COUNTER!!
+    // https://www.websiteout.net/counter.php
+    // https://counter.fc2.com/en/index.html
+    
+            CHOOSE A CALENDAR!!
+    // https://calendar.sakura.ne.jp/blog_cal.html
+    // figgypudding.neocities.org/blogendar/blogendar-2 (WHITE)
+    // figgypudding.neocities.org/blogendar/blogendar-3 (BLACK)
+    // figgypudding.neocities.org/blogendar/blogendar-4 (MULTI)
+    
+    // If you want tooltips: https://pastebin.com/kAzsyMVZ
+    
+    
+            NOTES FOR EDITING...
+    // When editing the heart-shaped image, make sure you adjust the size accordingly, or the image may bug out and cut off a bit.
+    
+    // Content (content, sidebars) may need its height adjusted to align if you want to make any of it taller. **They are not all the same sizes, so adjust accordingly**
+    
+    -->
+
+    <title>Website Title</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="shortcut icon" href="https://windchime.neocities.org/fountain/spring/clover.gif">
+    
+<script type="text/javascript">
+// <![CDATA[
+var speed=100; // speed colours change, 1 second = 1000
+var glow=3; // can be set from '0' for no glow, to 10
+var raincol=new Array("#ff0000", "#ff5500", "#ffaa00", "#ffff00", "#aaff00", "#55ff00", "#00ff00", "#00ff55", "#00ffaa", "#00ffff", "#00aaff", "#0055ff", "#0000ff", "#5500ff", "#aa00ff", "#ff00ff", "#ff00aa", "#ff0055"); // change the colours if you want to
+var alink="http://www.mf2fm.com/rv/"; // page to link text to (set to ="" for no link)
+
+/****************************
+*    Rainbow Text Effect    *
+*(c)2003-13 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+var rainbow, raintxt, raincnt=0;
+
+function addLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addLoadEvent(regenbogen);
+
+function regenbogen() { if (document.getElementById) {
+  var i, rainbeau;
+  rainbow=document.getElementById("rainbow");
+  raintxt=rainbow.firstChild.nodeValue;
+  while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
+  for (i=0; i<raintxt.length; i++) {
+    rainbeau=document.createElement("span");
+    rainbeau.setAttribute("id", "rain"+i);
+    rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
+    if (alink) {
+      rainbeau.style.cursor="pointer";
+      rainbeau.onclick=function() { top.location.href=alink; }
+    }
+    rainbow.appendChild(rainbeau);
+  }
+  rainbow=setInterval ("raining()", speed);
+}}
+
+function raining() {
+  var i, c;
+  for (i=0; i<raintxt.length; i++) {
+    c=raincol[(i+raincnt)%raincol.length];
+    document.getElementById("rain"+i).style.color=c;
+	if (glow) document.getElementById("rain"+i).style.textShadow=c+" 0px 0px "+glow+"px";
+  }
+  raincnt++;
+}
+// ]]>
+</script>    
+    
+    
+    <style type="text/css">
+    
+    body{
+        font-size:18px;
+        font-family:ms gothic;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */     
+    
+    a{
+        color:#e38bc3;
+        text-decoration:underline;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */     
+    
+    a:hover{
+        text-decoration:underline wavy #e38bc3;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */     
+    
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 10px;}
+
+    /* . . . . . . . . . . . . . . . . */ 
+    
+    ::-webkit-scrollbar-thumb:vertical{
+        background:#ffd6f3;}
+
+    /* . . . . . . . . . . . . . . . . */ 
+    
+    ::-webkit-scrollbar-track {
+        background-color:#fff6ff;}
+
+    /* . . . . . . . . . . . . . . . . */ 
+    
+    ::-webkit-scrollbar-button:vertical:increment {
+        width: 14px;
+        height: 16px;
+        background-color:#ffd6f3;}
+
+    /* . . . . . . . . . . . . . . . . */ 
+    
+    ::-webkit-scrollbar-button:vertical:decrement {
+        background-color:#ffd6f3;
+        width: 14px;
+        height: 16px;}    
+        
+    
+    /******************************
+    
+               CONTAINER
+    
+    ******************************/
+    
+    #container{
+        position:absolute;
+        width:975px;
+        left: 50%;
+        border-width:15px;
+        border-style:solid;
+        border-image: url("https://64.media.tumblr.com/0689523192be485ba5662aefab66ea36/d4770617ef850cd2-00/s400x600/23e5d797ea1eefda40acac40549026b11b938532.png") 55 fill round;
+        transform: translateX(-50%);
+        border-top-right-radius:20px;
+        border-top-left-radius:20px;        
+        margin-top:10px;
+    } 
+    
+    
+    /* . . . . . . . . . . . . . . . . */         
+    
+    #header{
+        border:2px white ridge;
+        border-top-right-radius:20px;
+        border-top-left-radius:20px;
+        background:#DBE9FF;
+        background-size: cover;
+        object-fit: fill;
+        background-size: 100%;
+        background-position: 100% 75%; 
+        background-image:url('https://64.media.tumblr.com/9c6669eba2a2baa025a9e87046d2c06f/tumblr_nk03vgtl9l1u289dqo3_250.png');
+        height:200px;
+    }    
+    
+    /* . . . . . . . . . . . . . . . . */                     
+    
+    #content{
+        border-top:none;
+        border-left:2px white ridge;
+        border-bottom:2px white ridge;
+        border-right:2px white ridge;
+        background:white;
+        width:612px;
+        height:530px;
+        margin-left:182px;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */                     
+    
+    #landing{
+        border-top:none;
+        border-left:none;
+        border-bottom:2px white ridge;
+        border-right:none;
+        height:200px;
+        padding:10px;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */                     
+    
+    #updates{
+        border-top:none;
+        border-left:none;
+        border-bottom:2px white ridge;
+        border-right:none;
+        padding:10px;
+        height:200px;
+    }    
+    
+    /* . . . . . . . . . . . . . . . . */                     
+    
+    #banner{
+        border-top:none;
+        border-left:none;
+        border-bottom:2px white ridge;
+        border-right:none;
+        padding:10px;
+        height:66px;
+    }    
+    
+    /* . . . . . . . . . . . . . . . . */                     
+        
+    #footer{
+        margin:10px 0 0 0;
+        padding:10px;
+    }    
+      
+    /* . . . . . . . . . . . . . . . . */ 
+    
+    #marquee{
+        border:2px white ridge;
+        border-top:none;
+        padding:5px;
+        background:white;
+    }
+    
+    /* . . . . . . . . . . . . . . . . */ 
+
+    #right{
+        background:white;
+        width:175px;
+        float:right;
+        border:2px white ridge;
+        border-left:none;
+        border-top:none;
+        height:530px;
+    }    
+    
+    #heart{
+       -webkit-mask-image:url(https://64.media.tumblr.com/530d6f82ba12efe719853b50499b1d5d/b58a88777157fa9c-6e/s500x750/69a0aa24e15c4c98f2b7ce62f6c00544e0b3a1c3.png);
+       -webkit-mask-repeat:no-repeat;
+       -webkit-mask-size:cover; 
+    }
+    
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <span id="rainbow" style="position:absolute;margin-top:150px;margin-left:20px;font-weight:bold;font-size:35px;">WEBSITE TITLE ♪</span>
+                
+                <img src="/" style="display:block;border:1px solid;width:200px;posiiton:absolute;margin-left:700px;">
+                
+            </div>
+            
+            <div id="marquee">
+                <marquee>Scrolling Marquee Title</marquee>
+            </div>
+            
+
+                    <div id="left" style="background:white;width:170px;float:left;border:2px white ridge;border-right:none;border-top:none;padding:5px;height:520px;">
+                        <div style="border:1px solid;padding:5px;text-align:center;">Section 1</div>
+                        
+                            <div style="margin:5px 0 5px 0">
+                                Link 1 
+                                <br>Link 2
+                                <br>Link 3
+                                <br>Link 4
+                                <br>Link 5
+                            </div>
+                        
+                        <div style="border:1px solid;padding:5px;text-align:center;">Section 2</div>
+                            <div style="margin:5px 0 5px 0">
+                                Link 1 
+                                <br>Link 2
+                                <br>Link 3
+                                <br>Link 4
+                                <br>Link 5
+                            </div>
+                        
+                        <div style="border:1px solid;padding:5px;text-align:center;">Section 3</div>
+                        
+                            <div style="margin:5px 0 5px 0">
+                                Link 1 
+                                <br>Link 2
+                                <br>Link 3
+                                <br>Link 4
+                                <br>Link 5
+                            </div>
+                            
+                            <div style="margin:5px 0 5px 0;border:1px solid;text-align:center;">
+                                Box of Crediting Things (adjust to liking)
+                            </div>
+                        
+                    </div>
+                    
+                    <div id="right">
+                        <div style="padding:5px;border-bottom:2px ridge white;text-align:center;">
+                            <h3>Text</h3>
+                            Paragraph 1
+                            <br>Paragraph 2
+                            <br>Paragraph 3
+                            <br>Paragraph 4
+                            <br>Paragraph 5
+                            <br>Paragraph 6
+                            <br>Paragraph 7
+                            
+                            <div style="border:1px solid;margin:10px 0 10px 0">Counter</div>
+                        </div>
+                        
+                        <div style="padding:5px;border-bottom:2px ridge white;text-align:center;">
+                            <div style="height:200px;border:1px solid;margin:22px 0 21px 0">Calendar</div>
+                        </div>
+                        
+                    </div>
+                        
+            <div id="content">
+                <div id="landing">
+                    <center><div style="border:1px solid;padding:5px;text-align:center;width:200px;margin:0 0 10px 0">Exploration</div></center>
+                    
+                    <div style="height:165px;overflow-y:scroll;">
+                        <table style="width:100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width:35%;padding-right:10px;">
+                                        <img id="heart" src="https://64.media.tumblr.com/34ee991a56de48c66a12cefe523341d6/tumblr_n3lbhd7iQ51qj8tvio1_1280.jpg" style="width:100%;height:170px;display:block;">
+                                    </td>
+                                
+                                    <td style="width:70%">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend quam adipiscing vitae proin sagittis nisl. <p>At risus viverra adipiscing at in tellus integer. 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                         <center>Dis parturient montes nascetur ridiculus. Auctor augue mauris augue neque gravida. Diam maecenas ultricies mi eget mauris pharetra et. Adipiscing diam donec adipiscing tristique risus.</center>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div id="updates">
+                    <center><div style="border:1px solid;padding:5px;text-align:center;width:200px;margin:0 0 10px 0">Update Log</div></center>
+                    
+                    <div style="height:165px;overflow-y:scroll;">
+                        Update log!
+                    </div>
+
+                </div>
+                
+                <div id="banner">
+                    <img src="https://64.media.tumblr.com/c530ca22d229930ad62060abc2879875/2dd97501dac64090-17/s640x960/f9b836e43ff60f2ba554c4879ad699636e85996c.png" style="display:block;width:100%;height:100%;">
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+    </html>      
