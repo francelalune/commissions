@@ -25,6 +25,8 @@
     
     // Content (content, sidebars) may need its height adjusted to align if you want to make any of it taller. **They are not all the same sizes, so adjust accordingly**
     
+    // background-position under #header is used to move the header image without having to crop it.
+    
     -->
 
     <title>Website Title</title>
@@ -167,12 +169,12 @@ function raining() {
         border:2px white ridge;
         border-top-right-radius:20px;
         border-top-left-radius:20px;
-        background:#DBE9FF;
+        background:white;
         background-size: cover;
         object-fit: fill;
         background-size: 100%;
         background-position: 100% 75%; 
-        background-image:url('https://64.media.tumblr.com/9c6669eba2a2baa025a9e87046d2c06f/tumblr_nk03vgtl9l1u289dqo3_250.png');
+        background-image:url('');
         height:200px;
     }    
     
