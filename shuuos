@@ -1,0 +1,222 @@
+    <!DOCTYPE HTML>
+    <head>
+    <meta charset="utf-8" />
+    
+
+    <title>{Title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://windchime.neocities.org/fountain/spring/clover.gif">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="//glen-npf-2020.glitch.me/npf-override.css" rel="stylesheet">
+    <script src="//glen-npf-2020.glitch.me/npf-evenize.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:300,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>    
+    
+    <style type="text/css">
+    
+    /*********************************
+    
+              Document Body
+    
+    *********************************/    
+    body{
+        font-family:arial;
+    }
+    /* . . . . . . . . . . . . . . . */  
+    a{
+        text-decoration:none;
+    }    
+    /* . . . . . . . . . . . . . . . */  
+    a:hover{
+    }
+    /* . . . . . . . . . . . . . . . */  
+    #s-m-t-tooltip{
+	    max-width: 300px;
+	    z-index: 10;
+	    margin: 24px 14px 7px 12px;
+	    padding:8px;
+	    border-radius:3px;
+        background: white;
+	    color: black;
+	    box-shadow: 0px 0px 5px 5px white;
+    }    
+    
+    /*********************************
+    
+            Container + Posts
+    
+    *********************************/  
+    
+    #container{
+        width:1200px;
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);    
+    }
+    /* . . . . . . . . . . . . . . . */    
+    #left{
+        width:275px;
+        margin:0 5px 0 0;
+        float:left;
+    }
+    /* . . . . . . . . . . . . . . . */    
+    #center{
+        width:640px;
+        float:left;
+    }    
+    /* . . . . . . . . . . . . . . . */    
+    #right{
+        float:right;
+        width:275px;
+    }    
+    #music-container{
+        border:1px solid pink;
+        position:absolute;top:0px;left:0px;transform:translate(130px,200px);
+        position:relative;
+        width:275px;
+        margin-left:55px;
+        height:170px;
+    }
+
+    {CustomCss}
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left">
+                <div style="background:#ffe6a6;height:300px;border:1px solid;">
+                    
+                </div>
+                
+                <div style="background:#e5ffa6;height:299px;margin:5px 0 5px ;border:1px solid;overflow-y:auto;overflow-x:hidden;">
+                    <center>
+    
+                        <iframe style="height:230px;border:none;width:275px;" src="https://figgypudding.neocities.org/shuu" ></iframe>    
+                        
+                        Calendar ! It would be a good idea to probably remove the box around it and fix it so that it would look like the calendar was an entire box itself if you don't plan to put anything else here. Or you could remove it entirely and put something else.
+                            
+                    </center>
+                </div>
+            </div>
+            <!-- --- --- -->
+            <div id="center">
+                <div style="background:pink;height:75px;padding:5px;border:1px solid;margin:0 0 5px 0;object-fit: fill;background-position: 50% 30%; background-image:url('https://64.media.tumblr.com/58dc18f27f237ee4e020bf800e5e3849/893bc3f2c9477507-3d/s500x750/a394b40ca0e57c319f758241e41544363ff14dd6.jpg');">
+                    <text style="color:blue;font-weight:bold;font-size:30px;">Site title, maybe?</text>
+                    
+                </div>
+                <div style="background:#c9ddff;height:20px;padding:5px;border:1px solid;">
+                    <marquee>
+                        Marquee could include stuff like the last update, and/or a link to your guestbook or something?
+                    </marquee>
+                </div>
+                
+                <div style="height:250px;overflow-y:auto;background:#a9eaa9;padding:5px;border:1px solid;margin:5px 0 0 0">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet cursus sit amet dictum sit amet justo donec. Arcu dui vivamus arcu felis bibendum. Adipiscing tristique risus nec feugiat.</p>
+                                    
+                                    <p>Etiam dignissim diam quis enim. Volutpat est velit egestas dui id ornare arcu odio ut.</p> 
+                                    
+                                </td>
+                                
+                                <td>
+                                    <img src="https://64.media.tumblr.com/73e63f57a702cbf1da13122d8e83d294/f19e3af11d902fe1-96/s400x600/6cb14e4907bd7d213dd822e4b6026c98070a41ba.png" style="width:120px;height:auto;margin:0 10px 0 10px">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Sed risus ultricies tristique nulla aliquet enim tortor at. Et leo duis ut diam quam nulla porttitor.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet cursus sit amet dictum sit amet justo donec. Arcu dui vivamus arcu felis bibendum. Adipiscing tristique risus nec feugiat.</p>
+                    
+                </div>
+                
+                <div style="margin:5px 0 0 0">
+                
+                    <div style="padding:5px;border:1px solid;float:left;background:#e9c9ff;width:305px;height:200px;overflow-y:auto;">
+                        <center>
+                        
+                            You can put your little eggs here
+                            
+                            <p><img src="https://64.media.tumblr.com/9f52cbaaf3376429f3bb40c252fe11d6/f19e3af11d902fe1-8d/s250x400/7602e73f7b5e8c951da8d09a1d1db74b6fd7c3f3.png" style="display:block;width:125px;">
+                            
+                        </center>
+                    </div>
+                    
+                   <div style="padding:5px;border:1px solid;float:right;background:#e9c9ff;width:305px;height:200px;">
+                        
+                        <div style="border-bottom:2px dotted black;padding:5px;background:white;">
+                            Diary!
+                        </div>
+                        
+                        <div style="overflow-y:auto;max-height:170px;text-indent:20px;">
+                            <p>You can put the body of your diary here, write enough and it'll develop a scroll!</p>
+                            <p>This text indent also looks nice, I think</p>
+                            
+                            <center><img src="https://64.media.tumblr.com/720628fdcbdf3b05ad213cf6c8e57618/f19e3af11d902fe1-a6/s250x400/f53c440ccc2774568208c8888aa7acb543e6e484.png" style="display:block;"></center>
+                            
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+            <!-- --- --- -->
+            <div id="right">
+                <div style="background:#ffe6a6;height:300px;border:1px solid;">
+                
+                    <div style="border-bottom:2px dotted black;padding:5px;background:white;">
+                        Link Directory
+                    </div>
+                        
+                    <div style="padding:5px;overflow-y:auto;height:260px;">
+                        - Link one
+                        <br> - Link two
+                        <br> - Link three
+                        <br> - Link four
+                        <br> - Link five
+                        <br> - Link six
+                        <br> - Link seven
+                        <br> - Link eight
+                        <br> - Link nine
+                        
+                        <p><center>Maybe you can categorize your links, i.e. an "info" page about you and a page for your art could be under "personal". (Look at my site if that's unclear KFJS)</center></p>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div style="background:#e5ffa6;height:299px;margin:5px 0 0 ;border:1px solid">
+                    
+                    <div style="padding:5px;">
+                        <center>Your <a href="https://chatango.com/">chatbox</a> can go here, would follow the same guise for the calendar if you go that route.
+                    
+                        <p><img src="https://64.media.tumblr.com/750786bae0f98c51f992756565186613/f19e3af11d902fe1-64/s250x400/da924f937430e3ff08e9e76ebdd987ebe05c29fe.png" style="display:block;width:200px;"></center>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    
+    </html> 
