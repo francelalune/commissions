@@ -1,7 +1,11 @@
-    <!DOCTYPE HTML>
+       <!DOCTYPE HTML>
     <head>
     <meta charset="utf-8" />
     
+    <!-- Comes with Tooltips, use data-toggle="tooltip" title="Title" (I put it on one of the images so you can see how it works !)
+    
+    -->
+
 
     <title>{Title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -137,7 +141,7 @@
                                 </td>
                                 
                                 <td>
-                                    <img src="https://64.media.tumblr.com/73e63f57a702cbf1da13122d8e83d294/f19e3af11d902fe1-96/s400x600/6cb14e4907bd7d213dd822e4b6026c98070a41ba.png" style="width:120px;height:auto;margin:0 10px 0 10px">
+                                    <img data-toggle="tooltip" title="Tooltip" src="https://64.media.tumblr.com/73e63f57a702cbf1da13122d8e83d294/f19e3af11d902fe1-96/s400x600/6cb14e4907bd7d213dd822e4b6026c98070a41ba.png" style="width:120px;height:auto;margin:0 10px 0 10px">
                                 </td>
                             </tr>
                         </tbody>
